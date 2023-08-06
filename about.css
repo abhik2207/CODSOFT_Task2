@@ -86,8 +86,8 @@ main {
 }
 
 .container .left img {
-    width: 700px;
-    border-radius: 50px;
+    width: 500px;
+    border-radius: 50%;
     border: 5px solid #FFFFFF;
     transition: 0.5s;
     opacity: 0.8;
@@ -96,6 +96,7 @@ main {
 .container .left img:hover {
     transform: scale(1.10);
     opacity: 1;
+    box-shadow: 0px 0px 40px #ffffffa4;
 }
 
 .container .right {
