@@ -11,14 +11,9 @@ html {
     scroll-behavior: smooth;
 }
 
-body::-webkit-scrollbar {
-    width: 0px;
-}
-
 body {
     background-color: rgb(0, 0, 33);
     color: #FFFFFF;
-    scrollbar-width: 0px;
 }
 
 nav {
@@ -81,6 +76,7 @@ main hr {
     align-items: center;
     margin: 130px 0;
     height: 60vh;
+    overflow: hidden;
 }
 
 .first-section > div {
@@ -223,7 +219,7 @@ main hr {
 .third-section {
     width: 80vw;
     margin: auto;
-    height: 160vh;
+    height: 170vh;
 }
 
 .third-section h1 {
@@ -282,6 +278,14 @@ main hr {
 
 .skill-row .skill .gsap {
     width: 210px;
+}
+
+.skill-row .skill .loco {
+    width: 310px;
+}
+
+.skill-row .skill .trig {
+    width: 220px;
 }
 
 .skill-row .skill .boot {
