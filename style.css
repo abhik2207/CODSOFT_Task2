@@ -87,6 +87,10 @@ main hr {
     width: 30%;
 }
 
+.left-section > span {
+    white-space: nowrap;
+}
+
 .first-section .left-section {
     font-size: 3rem;
 }
