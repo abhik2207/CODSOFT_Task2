@@ -219,7 +219,7 @@ main hr {
 .third-section {
     width: 80vw;
     margin: auto;
-    height: 120vh;
+    height: 160vh;
 }
 
 .third-section h1 {
@@ -235,6 +235,7 @@ main hr {
     display: flex;
     width: 100%;
     justify-content: space-around;
+    margin: 20px;
 }
 
 .skill-row .skill {
@@ -272,19 +273,19 @@ main hr {
 }
 
 .skill-row .skill .js {
-    width: 440px;
+    width: 410px;
 }
 
 .skill-row .skill .gsap {
-    width: 260px;
+    width: 210px;
 }
 
 .skill-row .skill .boot {
-    width: 470px;
+    width: 430px;
 }
 
 .skill-row .skill .tail {
-    width: 390px;
+    width: 290px;
 }
 
 .skill-row .skill .py {
@@ -292,11 +293,11 @@ main hr {
 }
 
 .skill-row .skill .cpp {
-    width: 490px;
+    width: 470px;
 }
 
 .skill-row .skill .c {
-    width: 490px;
+    width: 330px;
 }
 
 .skill-row .skill .java {
@@ -304,11 +305,19 @@ main hr {
 }
 
 .skill-row .skill .django {
-    width: 460px;
+    width: 420px;
 }
 
 .skill-row .skill .react {
-    width: 410px;
+    width: 330px;
+}
+
+.skill-row .skill .expr {
+    width: 250px;
+}
+
+.skill-row .skill .node {
+    width: 250px;
 }
 
 .skill-row .skill .swng {
@@ -324,19 +333,19 @@ main hr {
 }
 
 .skill-row .skill .dsa {
-    width: 420px;
+    width: 380px;
 }
 
 .skill-row .skill .mongo {
-    width: 460px;
+    width: 420px;
 }
 
 .skill-row .skill .post {
-    width: 490px;
+    width: 450px;
 }
 
 .skill-row .skill .mysql {
-    width: 490px;
+    width: 450px;
 }
 
 .skill-row .skill .canva {
