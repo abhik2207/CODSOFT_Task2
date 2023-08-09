@@ -11,9 +11,14 @@ html {
     scroll-behavior: smooth;
 }
 
+body::-webkit-scrollbar {
+    width: 0px;
+}
+
 body {
     background-color: #000021;
     color: #FFFFFF;
+    scrollbar-width: 0px;
 }
 
 nav {
