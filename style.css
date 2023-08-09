@@ -12,7 +12,7 @@ html {
 }
 
 body {
-    background-color: rgb(0, 0, 33);
+    background-color: #000021;
     color: #FFFFFF;
 }
 
@@ -21,7 +21,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     height: 80px;
-    background-color: rgb(13, 9, 54);
+    background-color: #0d0936;
     font-size: 1.5rem;
 }
 
@@ -54,18 +54,18 @@ nav .right ul li a {
 }
 
 nav .right ul li a:hover {
-    color: rgb(153, 153, 226);
-    border: 3px solid rgb(153, 153, 226);
+    color: #9999e2;
+    border: 3px solid #9999e2;
 }
 
 nav .right ul li a:active {
     cursor: grabbing;
-    color: rgb(153, 153, 226);
+    color: #9999e2;
 }
 
 main hr {
     border: 0;
-    background-color: rgb(170, 107, 228);
+    background-color: #aa6be4;
     height: 2px;
     margin: 60px 84px;
 }
@@ -92,7 +92,6 @@ main hr {
 }
 
 .area {
-    /* overflow: hidden; */
     width: fit-content;
     transition: 0.5s;
 }
@@ -121,23 +120,23 @@ main hr {
 }
 
 .purple {
-    color: rgb(170, 107, 228);
+    color: #aa6be4;
 }
 
 .gray {
-    color: gray;
+    color: #808080;
 }
 
 #element {
-    color: rgb(170, 107, 228);
+    color: #aa6be4;
 }
 
 .first-section .left-section button {
     outline: 0;
     border: 2px solid transparent;
     border-radius: 10px;
-    background-color: rgb(222, 189, 253);
-    color: rgb(13, 9, 54);
+    background-color: #debdfd;
+    color: #0d0936;
     padding: 10px 30px;
     font-size: 24px;
     margin-top: 60px;
@@ -145,15 +144,15 @@ main hr {
 }
 
 .first-section .left-section button:hover {
-    background-color: rgb(13, 9, 54);
-    color: rgb(222, 189, 253);
-    border: 2px solid rgb(222, 189, 253);
+    background-color: #0d0936;
+    color: #debdfd;
+    border: 2px solid #debdfd;
     cursor: grab;
 }
 
 .first-section .left-section button:active {
-    background-color: rgb(222, 189, 253);
-    color: rgb(13, 9, 54);
+    background-color: #debdfd;
+    color: #0d0936;
     border: 2px solid transparent;
     cursor: grabbing;
     transform: scale(0.95);
@@ -247,7 +246,7 @@ main hr {
 }
 
 .skill-row .skill .horizontal {
-    background-color: rgb(170, 107, 228);
+    background-color: #aa6be4;
     width: 500px;
     height: 24px;
     margin-top: 16px;
@@ -255,7 +254,7 @@ main hr {
 }
 
 .skill-row .skill .value {
-    background-color: black;
+    background-color: #000000;
     height: 12px;
     margin-top: 15px;
     border-radius: 3px;
@@ -360,12 +359,107 @@ main hr {
     width: 490px;
 }
 
+.fourth-section {
+    width: 80vw;
+    margin: auto;
+    height: 70vh;
+}
+
+.fourth-section h1 {
+    font-size: 2.4rem;
+    margin-bottom: 100px;
+}
+
+.skill-section-2 {
+    margin-top: 50px;
+}
+
+.skill-row-2 {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 70px;
+}
+
+.skill-row-2 .skill-2 {
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.skill-row-2 .skill-2:hover {
+    transform: scale(1.10);
+}
+
+.skill-2 h2 {
+    margin-top: 40px;
+}
+
+.skill-row-2 .skill-2 .pie {
+    width: 125px;
+    height: 125px;
+    background-image: conic-gradient(#000000 360deg, transparent 360deg);
+    border-radius: 50%;
+}
+
+.skill-row-2 .skill-2 .lead {
+    width: 125px;
+    height: 125px;
+    background-image: conic-gradient(#00ff15 340deg, #000021 0 235deg, #000021 0);
+    border-radius: 50%;
+}
+
+.skill-row-2 .skill-2 .pers {
+    width: 125px;
+    height: 125px;
+    background-image: conic-gradient(#00ff15 300deg, #000021 0 235deg, #000021 0);
+    border-radius: 50%;
+}
+
+.skill-row-2 .skill-2 .res {
+    width: 125px;
+    height: 125px;
+    background-image: conic-gradient(#00ff15 320deg, #000021 0 235deg, #000021 0);
+    border-radius: 50%;
+}
+
+.skill-row-2 .skill-2 .hard {
+    width: 125px;
+    height: 125px;
+    background-image: conic-gradient(#00ff15 360deg, #000021 0 235deg, #000021 0);
+    border-radius: 50%;
+}
+
+.skill-row-2 .skill-2 .crtv {
+    width: 125px;
+    height: 125px;
+    background-image: conic-gradient(#00ff15 280deg, #000021 0 235deg, #000021 0);
+    border-radius: 50%;
+}
+
+.skill-row-2 .skill-2 .red {
+    width: 125px;
+    height: 125px;
+    background-image: conic-gradient(#00ff15 320deg, #000021 0 235deg, #000021 0);
+    border-radius: 50%;
+}
+
+.skill-row-2 .skill-2 .pie-center {
+    border-radius: 50%;
+    background-color: #000021;
+    width: 100px;
+    height: 100px;
+    margin-top: -112px;
+    margin-left: 12px;
+}
+
 .end {
     text-align: center;
 }
 
 footer {
-    background-color: rgb(1, 0, 19);
+    background-color: #010013;
     height: 130px;
 }
 
@@ -420,6 +514,6 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: rgb(1, 0, 19);
+    background-color: #010013;
     padding: 20px 0px;
 }
