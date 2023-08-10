@@ -6,20 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abhik - Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="logo.png">
+    <link rel="icon" href="portfolio.png">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cdfe9b316a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div id="main">
+        <div id="top"></div>
         <header>
             <nav>
                 <div class="left">Abhik's Portfolio</div>
                 <div class="right">
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="https://github.com/abhik2207" target="_blank">Projects</a></li>
-                        <li><a href="https://www.linkedin.com/in/abhik-gupta-b494121ab/" target="_blank">Experiences</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#skill">Skills</a></li>
+                        <li><a href="#project">Projects</a></li>
                         <li><a href="mailto:abhikgupta01@gmail.com">Contact Me</a></li>
                     </ul>
                 </div>
@@ -27,7 +31,7 @@
         </header>
 
         <main>
-            <section class="first-section">
+            <section class="intro-section">
                 <div class="left-section">
                     Well, Hello there!<br>
                     My name is <span class="purple">Abhik Gupta</span>
@@ -37,14 +41,32 @@
                 </div>
                 <div class="right-section">
                     <div class="area">
-                        <img src="cover2.png">
+                        <img src="cover.png">
                     </div>
                 </div>
             </section>
+            <div id="about"></div>
             <hr>
-            <section class="second-section">
+            <div class="about-section">
+                <span class="gray">Here's what you should know</span>
+                <h1>About me</h1>
+                <div class="container">
+                    <div class="left">
+                        <img src="abhik-sq.png">
+                    </div>
+                    <div class="right">
+                        <div class="card">
+                            <!-- <h1>About me</h1> -->
+                            <p>So, Hey! Starting off with my credentials - I am Abhik Gupta, 20 years old and from Delhi. I gained my early education from Rainbow English Senior Secondary School. I also completed my Matric (10th) in 2019 and Intermediate (12th) in 2021 from the same school as well, based in Janakpuri, New Delhi.<br><br>Currently I am persuing Bachelor of Computer Applications (BCA) from an affiliated college of Guru Gobind Singh Indraprastha Univerity (GGSIPU), and my college's is Maharaja Surajmal Institute based in Janakpuri, New Delhi.<br><br>My major Technical Skills include - Web Dev, Django, React and Databases. Currently my inclination is towards Web Development and thats what I am to planned to cope up as a career in future.<br><br>My core Value skills would be Perseverance, Resilience, Hardwork and Creativity. Throw me in any situation with some major level of complexity, and sooner or later I'll end up solving the problem.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="education"></div>
+            <hr>
+            <section class="education-section">
                 <span class="gray">What I have studied so far</span>
-                <h1>My Education</h1>
+                <h1>Education</h1>
                 <div class="box">
                     <div class="vertical">
                         <img class="image-top" src="10th.png">
@@ -100,8 +122,9 @@
                     </div>
                 </div>
             </section>
+            <div id="skill"></div>
             <hr>
-            <section class="third-section">
+            <section class="tech-skills-section">
                 <span class="gray">What skills I have gained</span>
                 <h1>Technical Skills</h1>
                 <div class="skill-section">
@@ -252,7 +275,7 @@
                 </div>
             </section>
             <hr>
-            <section class="fourth-section">
+            <section class="non-tech-skills-section">
                 <span class="gray">What I have to offer</span>
                 <h1>Non-Technical Skills</h1>
                 <div class="skill-section-2">
@@ -287,7 +310,71 @@
                         <div class="skill-2">
                             <div class="pie lead"></div>
                             <div class="pie-center"></div>
-                            <h2>Innovative</h2>
+                            <h2>Innovation</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <div id="project"></div>
+            <section class="projects-section">
+                <span class="gray">What I have created</span>
+                <h1>Projects</h1>
+                <div class="projects">
+                    <div class="project-row">
+                        <div class="project">
+                            <div class="image-div">
+                                <a href="https://abhik2207.github.io/CYNTHIA-UGWU-WEBSITE-CLONE/" target="_blank"><img src="project-cynthia.png"></a>
+                            </div>
+                            <div class="description-div">
+                                <h1>Clone of Cynthia Ugwu's website</h1>
+                                <p>Here I created a clone of Cynthia Ugwu's Website. I found the website very innovative and cool-looking, with diverse animations and attractive pages. The technologies I have used are HTML, CSS, Javascript, GSAP and Locomotive JS.</p>
+                                <p>Source Code - <a href="https://github.com/abhik2207/CYNTHIA-UGWU-WEBSITE-CLONE" target="_blank">Click here</a></p>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <div class="image-div">
+                                <a href="https://abhik2207.github.io/THIS-IS-MAGMA-CLONE/" target="_blank"><img src="project-magma.png"></a>
+                            </div>
+                            <div class="description-div">
+                                <h1>Clone of This is Magma's website</h1>
+                                <p>Here I created a clone of This is Magma's Website. I found the website very innovative and cool-looking, with diverse animations and attractive pages. The technologies I have used are HTML, CSS, Javascript, GSAP and Locomotive JS.</p>
+                                <p>Source Code - <a href="https://github.com/abhik2207/THIS-IS-MAGMA-CLONE" target="_blank">Click here</a></p>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <div class="image-div">
+                                <a href="https://abhik2207.github.io/APPLE-VISION-PRO-CLONE/" target="_blank"><img src="project-apple.png"></a>
+                            </div>
+                            <div class="description-div">
+                                <h1>Clone of Apple Vision Pro's website</h1>
+                                <p>Here I created a clone of Apple Vision Pro's Website. I found the website very innovative and cool-looking, with diverse animations and attractive pages. The technologies I have used are HTML, CSS, Javascript, GSAP and Locomotive JS.</p>
+                                <p>Source Code - <a href="https://github.com/abhik2207/APPLE-VISION-PRO-CLONE" target="_blank">Click here</a></p>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <div class="image-div">
+                                <a href="https://abhik2207.github.io/NICCOLO-MIRANDA-CLONE/" target="_blank"><img src="project-miranda.png"></a>
+                            </div>
+                            <div class="description-div">
+                                <h1>Clone of NIccolo Miranda's website</h1>
+                                <p>Here I created a clone of This is Magma's Website. I found the website very innovative and cool-looking, with diverse animations and attractive pages. The technologies I have used are HTML, CSS, Javascript, GSAP and Locomotive JS.</p>
+                                <p>Source Code - <a href="https://github.com/abhik2207/NICCOLO-MIRANDA-CLONE" target="_blank">Click here</a></p>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <div class="image-div">
+                                <a href="https://abhik2207.github.io/SIDCUP-FAMILY-GOLF/" target="_blank"><img src="project-sidcup.png"></a>
+                            </div>
+                            <div class="description-div">
+                                <h1>Clone of Sidcup Family Golf's website</h1>
+                                <p>Here I created a clone of Sidcup Family Golf's Website. I found the website very innovative and cool-looking, with diverse animations and attractive pages. The technologies I have used are HTML, CSS, Javascript, GSAP and Locomotive JS.</p>
+                                <p>Source Code - <a href="https://github.com/abhik2207/SIDCUP-FAMILY-GOLF" target="_blank">Click here</a></p>
+                            </div>
+                        </div>
+                        <div class="other-projects">
+                            <h1>For other such projects, please visit my Github <i class="ri-arrow-right-line"></i></h1>
+                            <a href="https://github.com/abhik2207"><i class="fa-brands fa-github"></i></a>
                         </div>
                     </div>
                 </div>
@@ -306,11 +393,10 @@
                 </div>
                 <div class="second-foot">
                     <ul>
-                        <li><a href="https://www.linkedin.com/in/abhik-gupta-b494121ab/" target="_blank"><img
-                                    src="linkedin.png"></a></li>
+                        <li><a href="https://www.linkedin.com/in/abhik-gupta-b494121ab/" target="_blank"><img src="linkedin.png"></a></li>
                         <li><a href="https://github.com/abhik2207" target="_blank"><img src="github.png"></a></li>
-                        <li><a href="https://instagram.com/abhik2207?igshid=NTc4MTIwNjQ2YQ==" target="_blank"><img
-                                    src="instagram.png"></a></li>
+                        <li><a href="https://instagram.com/abhik2207?igshid=NTc4MTIwNjQ2YQ==" target="_blank"><img src="instagram.png"></a></li>
+                        <li><a href="https://twitter.com/Abhik2207" target="_blank"><img src="twitter.png"></a></li>
                     </ul>
                 </div>
                 <div class="third-foot">
@@ -320,7 +406,7 @@
                     </ul>
                 </div>
                 <div class="fourth-foot">
-                    <img src="portfolio.png">
+                    <a href="#top"><img src="top.png"></a>
                 </div>
             </div>
         </footer>
