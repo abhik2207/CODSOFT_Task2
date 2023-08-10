@@ -26,8 +26,12 @@ nav {
     justify-content: space-between;
     align-items: center;
     height: 80px;
+    width: 100%;
     background-color: #0d0936;
     font-size: 1.5rem;
+    position: fixed;
+    top: 0%;
+    z-index: 200;
 }
 
 nav .left {
@@ -72,19 +76,19 @@ main hr {
     border: 0;
     background-color: #aa6be4;
     height: 2px;
-    margin: 60px 84px;
+    margin: 00px 84px;
 }
 
-.first-section {
+.intro-section {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 130px 0;
-    height: 60vh;
+    margin: 150px 0;
+    height: 80vh;
     overflow: hidden;
 }
 
-.first-section > div {
+.intro-section > div {
     width: 30%;
 }
 
@@ -92,7 +96,7 @@ main hr {
     white-space: nowrap;
 }
 
-.first-section .left-section {
+.intro-section .left-section {
     font-size: 3rem;
 }
 
@@ -101,7 +105,7 @@ main hr {
     transition: 0.5s;
 }
 
-.first-section .right-section .area img {
+.intro-section .right-section .area img {
     width: 80%;
     transform: translateX(200%);
     animation-name: slide;
@@ -120,7 +124,7 @@ main hr {
     }
 }
 
-.first-section .right-section .area:hover {
+.intro-section .right-section .area:hover {
     transform: scale(1.05);
 }
 
@@ -136,7 +140,7 @@ main hr {
     color: #aa6be4;
 }
 
-.first-section .left-section button {
+.intro-section .left-section button {
     outline: 0;
     border: 2px solid transparent;
     border-radius: 10px;
@@ -148,14 +152,14 @@ main hr {
     transition: 0.5s;
 }
 
-.first-section .left-section button:hover {
+.intro-section .left-section button:hover {
     background-color: #0d0936;
     color: #debdfd;
     border: 2px solid #debdfd;
     cursor: grab;
 }
 
-.first-section .left-section button:active {
+.intro-section .left-section button:active {
     background-color: #debdfd;
     color: #0d0936;
     border: 2px solid transparent;
@@ -163,18 +167,89 @@ main hr {
     transform: scale(0.95);
 }
 
-.second-section {
+.about-section {
+    margin: 100px 0px;
+}
+
+.about-section>h1 {
+    font-size: 2.4rem;
+    margin-bottom: 80px;
+    margin-left: 160px;
+}
+
+.about-section span {
+    margin-left: 160px;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.container .left {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .left img {
+    width: 500px;
+    border-radius: 50%;
+    border: 5px solid #FFFFFF;
+    transition: 0.5s;
+    opacity: 0.8;
+}
+
+.container .left img:hover {
+    transform: scale(1.10);
+    opacity: 1;
+    box-shadow: 0px 0px 40px #ffffffa4;
+}
+
+.container .right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .right .card {
+    width: 700px;
+    height: 524.88px;
+    background-color: #ffffff09;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    padding: 50px;
+}
+
+.container .right .card h1 {
+    margin-bottom: 20px;
+}
+
+.container .right .card:hover {
+    transform: scale(1.10);
+    background-color: #ffffff1a;
+}
+
+.education-section {
     width: 80vw;
-    margin: auto;
+    margin: 100px 0px;
+    margin-left: 160px;
     height: 60vh;
 }
 
-.second-section h1 {
+.education-section h1 {
     font-size: 2.4rem;
     margin-bottom: 150px;
 }
 
-.second-section .box {
+.education-section .box {
     background-color: #FFFFFF;
     width: 80vw;
     height: 2px;
@@ -185,7 +260,7 @@ main hr {
     left: -40px;
 }
 
-.second-section .box .vertical {
+.education-section .box .vertical {
     background-color: #FFFFFF;
     height: 93px;
     width: 1px;
@@ -220,13 +295,14 @@ main hr {
     font-size: 12px;
 }
 
-.third-section {
+.tech-skills-section {
     width: 80vw;
-    margin: auto;
+    margin: 100px 0px;
+    margin-left: 160px;
     height: 170vh;
 }
 
-.third-section h1 {
+.tech-skills-section h1 {
     font-size: 2.4rem;
     margin-bottom: 100px;
 }
@@ -364,13 +440,14 @@ main hr {
     width: 490px;
 }
 
-.fourth-section {
+.non-tech-skills-section {
     width: 80vw;
-    margin: auto;
+    margin: 100px 0px;
+    margin-left: 160px;
     height: 70vh;
 }
 
-.fourth-section h1 {
+.non-tech-skills-section h1 {
     font-size: 2.4rem;
     margin-bottom: 100px;
 }
@@ -459,13 +536,113 @@ main hr {
     margin-left: 12px;
 }
 
+.projects-section {
+    width: 80vw;
+    margin: 100px 0px;
+    margin-left: 160px;
+    height: 220vh;
+}
+
+.projects-section>h1 {
+    font-size: 2.4rem;
+    margin-bottom: 100px;
+}
+
+.projects-section .project-row {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.project-row .project {
+    display: flex;
+    gap: 30px;
+    height: 300px;
+}
+
+.project .image-div {
+    width: 1210px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.project .description-div {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.description-div h1 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.description-div a {
+    color: #9999e2;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.description-div a:hover {
+    color: #d1d1ff;
+    cursor: grab;
+}
+
+.description-div a:active {
+    cursor: grabbing;
+}
+
+.project-row a img {
+    height: 300px;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.project-row a img:hover {
+    cursor: grab;
+    transform: scale(1.10);
+}
+
+.project-row a img:active {
+    cursor: grabbing;
+}
+
+.other-projects {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.other-projects h1 {
+    font-weight: 200;
+    margin-top: 50px;
+}
+
+.other-projects a i {
+    color: #fff;
+    transform: scale(3.5);
+    transition: 0.2s;
+    margin-top: 50px;
+}
+
+.other-projects a i:hover {
+    transform: scale(4);
+    filter: drop-shadow(0px 0px 10px #fff);
+}
+
 .end {
     text-align: center;
+    margin: 60px 0px;
 }
 
 footer {
     background-color: #010013;
     height: 130px;
+    margin-top: 50px;
 }
 
 .footer {
@@ -509,8 +686,13 @@ footer {
 }
 
 .fourth-foot img {
-    width: 60px;
-    margin-left: 60px;
+    width: 40px;
+    margin-left: 100px;
+    transition: 0.4s;
+}
+
+.fourth-foot img:hover {
+    transform: scale(1.5);
 }
 
 .footer-rights {
